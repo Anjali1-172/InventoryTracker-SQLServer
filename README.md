@@ -24,3 +24,32 @@ LowStockView: Lists products with stock below threshold\
 RecentTransactions: Shows last 10 inventory transactions\
 Inventory Snapshot: Combines product info with latest transaction\
 PendingShipmentsView: Tracks undelivered shipments
+
+# 🧪SAMPLE QUERIES 
+#
+-- Fetch products low on stock\
+SELECT * FROM LowStock;
+#
+-- View most recent transaction per product\
+SELECT * FROM InventorySnapshot;
+#
+-- Execute stock update\
+EXEC UpdateProductStock @ProductID = 1, @QuantityChange = -10;
+
+# 📂PROJECT STRUCTURE
+
+├── README.md                # Project documentation\
+├── schema.sql               # Table creation scripts\
+├── procedures.sql           # Stored procedure definitions\
+├── triggers.sql             # Trigger logic\
+├── views.sql                # View definitions\
+├── sample-data.sql          # Dummy data for testing\
+
+# 🙋‍♀️About the Developer
+Created by [ANJALI].\
+Passionate about backend systems,\
+cloud infrastructure, \
+and Al product strategy.\
+Currently exploring SaaS design,\
+real-time inventory analytics, and DP-900 certification.
+
