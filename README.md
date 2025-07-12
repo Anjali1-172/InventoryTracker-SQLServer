@@ -11,15 +11,15 @@ InventoryTransactions
 ShippingDetails
 # 🔩Key Features
 #
-# Stored Procedures
+# 1.Stored Procedures
 UpdateProductStock: Automatically adjusts stock levels\
 AddNewProduct: Adds new products into inventory\
 ProcessShipment: Logs a shipment and updates stock
-# Triggers
+# 2.Triggers
 OnStockUpdate_LogTxn: Records every stock update\
 OnInsert Product_LogNewProduct: Logs new product additions\
 OnShipmentArrival_UpdateStock: Auto-updates stock when a shipment arrives
-# Views
+# 3.Views
 LowStockView: Lists products with stock below threshold\
 RecentTransactions: Shows last 10 inventory transactions\
 Inventory Snapshot: Combines product info with latest transaction\
